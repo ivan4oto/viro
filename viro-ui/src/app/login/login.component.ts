@@ -94,6 +94,8 @@ export class LoginComponent implements OnInit {
 
   async login() {
     FB.login(async (result:any) => {
+      console.log(result);
+      console.log(result.authResponse);
       await this.service.LoginWithFacebook(result.authResponse.accessToken).subscribe(
         (x:any) => {
           this._ngZone.run(() => {
