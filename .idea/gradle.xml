@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/api/buildSrc" name="buildSrc">
+                <projects>
+                  <project path="$PROJECT_DIR$/api/buildSrc" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api" />
+        <option name="gradleJvm" value="temurin-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/api" />
+            <option value="$PROJECT_DIR$/api/app" />
+            <option value="$PROJECT_DIR$/api/auth" />
+            <option value="$PROJECT_DIR$/api/buildSrc" />
+            <option value="$PROJECT_DIR$/api/list" />
+            <option value="$PROJECT_DIR$/api/utilities" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
